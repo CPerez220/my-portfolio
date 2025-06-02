@@ -1,17 +1,21 @@
+import mobileProjects from '../data/mobile';
 import ProjectCard from '../components/ProjectCard';
 
 function MobileApps() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h2 style={{ color: 'white', marginBottom: '2rem' }}>Mobile Apps</h2>
+    <div className="p-8 space-y-8">
+      <h2 className="text-white text-3xl font-bold mb-4">Mobile Apps</h2>
 
-      <ProjectCard
-        title="TrackPay"
-        description="A location-based employee time tracker app for construction and logistics."
-        image="https://via.placeholder.com/600x300"
-        stack="React Native, Firebase, Expo"
-        link="https://github.com/cmperez0730/trackpay"
-      />
+      {mobileProjects.map((project, index) => (
+        <ProjectCard
+          key={index}
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          stack={project.stack}
+          link={project.link}
+        />
+      ))}
     </div>
   );
 }

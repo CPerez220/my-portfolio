@@ -6,7 +6,7 @@ import FullStackApps from './pages/FullStackApps';
 import MobileApps from './pages/MobileApps';
 import Videogames from './pages/Videogames';
 
-/*function App() {
+function App() {
   return (
     <div>
       <Navbar />
@@ -17,13 +17,6 @@ import Videogames from './pages/Videogames';
         <Route path="/games" element={<Videogames />} />
       </Routes>
       <Footer />
-    </div>
-  );
-}*/
-function App() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Tailwind CSS is working!</h1>
     </div>
   );
 }

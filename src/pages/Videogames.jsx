@@ -1,17 +1,21 @@
+import gameProjects from '../data/games';
 import ProjectCard from '../components/ProjectCard';
 
 function Videogames() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h2 style={{ color: 'white', marginBottom: '2rem' }}>Videogames</h2>
+    <div className="p-8 space-y-8">
+      <h2 className="text-white text-3xl font-bold mb-4">Videogames</h2>
 
-      <ProjectCard
-        title="Codefowl"
-        description="A 2D platformer game developed as part of a bootcamp capstone."
-        image="https://via.placeholder.com/600x300"
-        stack="JavaScript, HTML5 Canvas, Tiled"
-        link="https://github.com/cmperez0730/codefowl"
-      />
+      {gameProjects.map((project, index) => (
+        <ProjectCard
+          key={index}
+          title={project.title}
+          description={project.description}
+          image={project.image}
+          stack={project.stack}
+          link={project.link}
+        />
+      ))}
     </div>
   );
 }
