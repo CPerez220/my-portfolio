@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 
 function FullStackApps() {
   return (
-    <div className="p-8 space-y-8">
+    <div className="container space-y-8">
       <h2 className="text-white text-3xl font-bold mb-4">Full-Stack Applications</h2>
 
       {fullstackProjects.map((project, index) => (

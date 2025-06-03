@@ -8,14 +8,25 @@ import Videogames from './pages/Videogames';
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        backgroundColor: '#111',
+      }}
+    >
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/fullstack" element={<FullStackApps />} />
-        <Route path="/mobile" element={<MobileApps />} />
-        <Route path="/games" element={<Videogames />} />
-      </Routes>
+
+      <div style={{ flex: 1 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fullstack" element={<FullStackApps />} />
+          <Route path="/mobile" element={<MobileApps />} />
+          <Route path="/games" element={<Videogames />} />
+        </Routes>
+      </div>
+
       <Footer />
     </div>
   );

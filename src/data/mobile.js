@@ -11,7 +11,7 @@ const mobileProjects = [
     description: "A simple to-do list app with reminders and offline mode.",
     image: "https://via.placeholder.com/600x300",
     stack: "React Native, SQLite",
-    link: "",
+    link: "https://github.com/cmperez0730/DailyList",
   },
 ];
 
